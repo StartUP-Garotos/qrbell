@@ -87,7 +87,7 @@
     }
 
     footer {
-        margin-top: 130px;
+        margin-top: 210px;
     }
 
     .footer-text {
@@ -186,8 +186,8 @@
     textarea::placeholder {
         color: var(--cor-principal);
     }
-    
-    .button-enviar button{
+
+    .button-enviar button {
         margin-top: 20px;
         text-align: center;
         border: 1px solid var(--cor-principal);
@@ -217,9 +217,18 @@
         width: 100px;
     }
 
-    @media (min-width: 400px) {
+    @media (max-width: 400px) {
         footer {
-            margin-top: 105px;
+            margin-top: 40px;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+        }
+
+        .container-motivo {
+            margin: 2rem auto;
+            padding: 0.8rem;
         }
     }
 }
