@@ -18,7 +18,7 @@
         margin: 10px auto;
         border: none;
         height: 1px;
-        border-top: 3px solid #f9d42b;
+        border-top: 3px solid var(--cor-secundaria);
         border-radius: 5px;
     }
 
@@ -86,5 +86,122 @@
         font-weight: 300;
         font-weight: bold;
         margin: 0 1rem;
+    }
+
+    .field {
+        position: relative;
+        width: 100%;
+        height: 52px;
+        max-width: 400px;
+        color: var(--cor-principal);
+        overflow: hidden;
+    }
+
+    .field input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding-top: 25px;
+        border: none;
+    }
+
+    .field .label-wrapper {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        background-color: inherit;
+        left: 0;
+        pointer-events: auto;
+        cursor: text;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+
+    .field .label-wrapper::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-bottom: 3px solid var(--cor-secundaria);
+        left: 0;
+        bottom: -1px;
+        transform: translateX(-100%);
+        transition: transform 0.2s ease;
+    }
+
+    .field .label-text {
+        position: absolute;
+        bottom: 5px;
+        left: 0px;
+        transition: all 0.2s ease;
+    }
+
+    .field input:focus {
+        outline: none;
+    }
+
+    .field input:focus+.label-wrapper .label-text,
+    .field input:valid+.label-wrapper .label-text {
+        font-size: 12px;
+        color: var(--cor-principal);
+        transform: translateY(-100%);
+    }
+
+    .field input:focus+.label-wrapper::after,
+    .field input:valid+.label-wrapper::after {
+        transform: translateX(0%);
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+        max-width: 400px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    textarea:focus {
+        outline: none;
+        border-color: var(--cor-principal);
+        box-shadow: 0 0 5px rgba(122, 22, 254, 0.5);
+    }
+
+    textarea::placeholder {
+        color: var(--cor-principal);
+    }
+    
+    .button-enviar button{
+        margin-top: 20px;
+        text-align: center;
+        border: 1px solid var(--cor-principal);
+        border-radius: 5px;
+        background-color: var(--cor-principal);
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .button-voltar a {
+        display: flex;
+        justify-content: center;
+        margin: 5rem auto;
+        font-size: 1.2rem;
+        background-color: var(--cor-principal);
+        color: white;
+        width: 100px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .imagem-header img {
+        display: flex;
+        margin: 2rem auto;
+        width: 100px;
     }
 }

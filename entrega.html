@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/icon/entregador.png">
+    <link rel="icon" type="image/x-icon" href="/images/icon/entregador-maior.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/variaveis.css">
     <link rel="stylesheet" href="style/global.css">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <form action="">
+    <form id="form-entrega" action="" onsubmit="return validarNome()">
         <div class="container-form">
             <div class="header">
                 <img src="images/icon/entregador.png" alt="">
@@ -23,13 +23,34 @@
                 </div>
             </div>
 
+
+            <div class="imagem-header">
+                <img src="images/icon/entregador-maior.png" alt="">
+            </div>
+
             <div class="container-motivo">
-                <input type="name" placeholder="Digite seu nome" required>
-                <input type="message" placeholder="Digite o nome do destinatário" required>
+                <div class="field">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name" class="label-wrapper">
+                        <span class="label-text">Nome Completo</span>
+                    </label>
+                </div>
+
+                <br><br>
+
+                <textarea id="message" name="text" placeholder="Digite sua mensagem" required rows="4"
+                    cols="30"></textarea>
+                <div class="button-enviar">
+                    <button type="submit">Enviar Mensagem</button>
+                </div>
             </div>
         </div>
     </form>
+    <div class="button-voltar">
+        <a href="index.html">Voltar</a>
+    </div>
 
+    <script src="index.js"></script>
 </body>
 
 </html>
