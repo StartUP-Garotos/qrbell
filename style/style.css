@@ -55,10 +55,36 @@
         font-size: 1.2rem;
         padding: 0.5rem;
         border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
     }
 
-    .button-entrega a, 
+    .button-entrega a,
     .button-visita a {
         color: var(--cor-principal);
+    }
+
+    .button-entrega:hover,
+    .button-visita:hover {
+        background-color: var(--cor-principal);
+        color: white;
+        transition: 0.3s;
+    }
+
+    footer {
+        margin-top: 130px;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+        padding-top: 10px;
+        text-align: center;
+        color: #333;
+        font-weight: 300;
+        font-weight: bold;
+        margin: 0 1rem;
     }
 }
