@@ -86,10 +86,6 @@
         transition: 0.3s;
     }
 
-    footer {
-        margin-top: 130px;
-    }
-
     .footer-text {
         font-size: 1rem;
         padding-top: 10px;
@@ -217,18 +213,4 @@
         width: 100px;
     }
 
-    @media (max-width: 400px) {
-        footer {
-            margin-top: 40px;
-        }
-
-        .footer-text {
-            font-size: 0.9rem;
-        }
-
-        .container-motivo {
-            margin: 2rem auto;
-            padding: 0.8rem;
-        }
-    }
 }
