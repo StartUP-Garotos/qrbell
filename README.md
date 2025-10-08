@@ -22,3 +22,21 @@ Em resumo, a combinação dessas tecnologias permite construir uma solução esc
 
 # Melhorias Futuras
 Colocar px => rem
+Ajustar página de Load e Frase introdutoria no index.php
+
+# Como vai funcionar
+ - Usuário escaneia QR CODE do número que deseja entrar em contato
+_______________________________________________________________________________
+
+Cada QR CODE vai levar para um página diferente:
+ - QR CODE da kitnet 101 -> .../redirection.php?numero=101
+ - QR CODE da kitnet 102 -> .../redirection.php?numero=102
+ - QR CODE da kitnet 103 -> .../redirection.php?numero=103
+ - QR CODE da kitnet 104 -> .../redirection.php?numero=104
+_______________________________________________________________________________
+
+Após escanear e levar para um destes links, automaticamente leva para a página inicial, o index,
+está parte server somente para saber qual apartamento estamos "lidando"
+________________________________________________________________________________
+
+Busca valores com no banco de dados pelo número do apartamento escaneado

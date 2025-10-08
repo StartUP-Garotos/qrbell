@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if (!$_SESSION['numero']){
+    die(header("location: load.php"));
+}
+
+$telefone = $_SESSION['telefone'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,7 +56,7 @@
         </div>
     </form>
     <div class="button-voltar">
-        <a href="index.html">Voltar</a>
+        <a href="index.php">Voltar</a>
     </div>
 
     <script src="index.js"></script>
