@@ -56,7 +56,7 @@ $telefone = $_SESSION['telefone'];
         </div>
     </form>
     <div class="button-voltar">
-        <a href="index.php">Voltar</a>
+        <a href="text.php">Voltar</a>
     </div>
 
     <script src="index.js"></script>
