@@ -24,9 +24,4 @@ function validarNome() {
     alert("Cada parte do nome deve ter pelo menos 2 letras.");
     return false;
   }
-
-  alert("Mensagem enviada com sucesso!");
-  window.location.href = "index.html";
-
-  return false;
 }

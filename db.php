@@ -1,9 +1,9 @@
 <?php
 
-$host = "sql105.infinityfree.com";
-$user = "if0_40131980";
-$pass = "EjtZdaxWKyidMXT";
-$db_name = "if0_40131980_qrbell";
+$host = "localhost";
+$user = "root";
+$pass = "root";
+$db_name = "qrbell";
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$db_name", $user, $pass);
