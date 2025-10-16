@@ -46,7 +46,7 @@ $_SESSION['telefone'] = $row['telefone'];
 
     <div class="container-motivo">
         <p>MOTIVO DA SUA VINDA</p>
-        <a href="#"> <!-- Colocar link da API do whatsapp -->
+        <a href="https://wa.me/5547996792788?text=Sua%20entrega%20chegou!">
             <div class="buttons-motivo">
                 <div class="button-entrega">
                     <img src="images/icon/entregador-icon.png" alt="Entregador Icon">
@@ -54,7 +54,7 @@ $_SESSION['telefone'] = $row['telefone'];
                 </div>
         </a>
         <div class="button-visita">
-            <a href="#"> <!-- Colocar link da API do whatsapp -->
+            <a href="https://wa.me/5547996792788?text=Bom%20dia,%20cheguei!">
                 <img src="images/icon/visita.png" alt="Visita Icon">
                 VISITA
             </a>
