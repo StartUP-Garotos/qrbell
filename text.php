@@ -39,14 +39,14 @@ $_SESSION['telefone'] = $row['telefone'];
         <img src="images/icon/icon.png" alt="Icon QrBell">
         <div class="header-text">
             <p>BEM VINDO(A)!</p>
-            <?php echo "Mandar mensagem para o número $numero"?> <!-- Deixar bonito esta frase -->
+            <?php echo "Mandar mensagem para o número $numero";?> <!-- Deixar bonito esta frase -->
             <hr>
         </div>
     </div>
 
     <div class="container-motivo">
         <p>MOTIVO DA SUA VINDA</p>
-        <a href="https://wa.me/5547996792788?text=Sua%20entrega%20chegou!">
+        <a href="https://wa.me/<?= $_SESSION['telefone'];?>?text=Sua%20entrega%20chegou!">
             <div class="buttons-motivo">
                 <div class="button-entrega">
                     <img src="images/icon/entregador-icon.png" alt="Entregador Icon">
@@ -54,7 +54,7 @@ $_SESSION['telefone'] = $row['telefone'];
                 </div>
         </a>
         <div class="button-visita">
-            <a href="https://wa.me/5547996792788?text=Bom%20dia,%20cheguei!">
+            <a href="https://wa.me/<?= $_SESSION['telefone'];?>?text=Bom%20dia,%20cheguei!">
                 <img src="images/icon/visita.png" alt="Visita Icon">
                 VISITA
             </a>
